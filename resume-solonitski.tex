@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Solonitski Maksim} & Email : \href{mailto:msolonitski@gmail.com}{msolonitski@gmail.com}\\
+  \href{https://t1nol.t.me}{Telegram : @t1nol} & Mobile : +79287579846 \\
+  \href{https://github.com/solonitski}{GitHub: \texttt{https://github.com/solonitski}} & \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ITMO University}{Saint-Petersburg}
+      {Computer Technologies}{Sept 2023 - August 2027}
+    \resumeItemListStart
+      \item\small
+        {\textbf{Relevant Modules:}
+          \begin{itemize}[leftmargin=1.5em]
+            \item \href{https://www.kgeorgiy.info/courses/prog-intro/index.html}{Introduction to Java}\href{https://github.com/solonitski/my-study-at-ITMO/tree/main/prog-intro}{ (My solutions to hws)}
+            \item \href{https://www.kgeorgiy.info/courses/paradigms/index.html}{Paradigms of programming}\href{https://github.com/solonitski/my-study-at-ITMO/tree/main/paradigms}{ (My solutions to hws)}
+            \item \href{https://www.kgeorgiy.info/courses/java-advanced/index.html}{Java advanced}
+            \item \texttt{Algorithms and Data structures}
+            \item \texttt{C/C++ course}\href{https://github.com/solonitski/my-study-at-ITMO/tree/main/cpp-course}{ (My solutions to labs and hws)}
+            \item \texttt{Discrete Mathematics}\href{https://github.com/solonitski/my-study-at-ITMO/tree/main/dm-labs/}{ (My solutions to labs)}
+            \item \texttt{Operating Systems}\href{https://github.com/solonitski/my-study-at-ITMO/tree/main/OS-LIGHT}{ (My solutions to labs)}
+            \item \texttt{Computer Architecture}\href{https://github.com/solonitski/my-study-at-ITMO/tree/main/comp-arch}{ (My solutions to labs)}
+            \item \texttt{Web programming (Spring, React, MySQL)}
+          \end{itemize}
+        }
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Academic Projects}{University}
+      {Project-Based Experience During Studies}{}
+    \resumeItemListStart
+      \resumeItem{}{Gained practical experience with Java, data structures, discrete mathematics, and computer architecture.}
+      \resumeItem{}{Developed web applications using Spring (backend), React (frontend), and MySQL (database).}
+      \resumeItem{}{Completed both individual and team assignments involving design, implementation, and testing.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Achievements and Interests}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {High School Achievements and Hobbies}{} 
+      {2022 - now}{}
+      \resumeItemListStart
+        \resumeItem{}
+          {Prize-winner of three school-level olympiads:
+            \begin{itemize}
+              \item \href{https://olymp.bmstu.ru/ru/winners/list/2022/11/maths}{Winner: Step to Future (BmSTU Maths Olympiad)}
+              \item \href{https://v-olymp.ru/olmp_it/news/}{Prize-winner of the Olympiad in Information Security}
+              \item \href{https://olymp.msu.ru/rus/event/6974/page/2733}{Prize-winner of the Lomonosov Maths Olympiad (MSU)}
+            \end{itemize}
+          }
+        \resumeItem{}
+          {Cycling enthusiast — enjoy riding and exploring new routes.}
+        \resumeItem{}
+          {Interested in humanities — especially history and economics.}
+        \resumeItem{}
+          {Enjoy reading in my free time.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Java, C, C++, JavaScript, Python }
+   }
+   \item{
+     \textbf{Technologies}{: Git, Bash, Linux, React, Spring Boot, MySQL, REST APIs, Qt (C++) }
+   }
+ \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
